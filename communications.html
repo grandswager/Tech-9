@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="static/css/styles.css">
 
         <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 
         <title>Technology and the Skilled Trades</title>
     </head>
@@ -21,11 +21,13 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="/" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#home" class="nav__link">Communications</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="/" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Communications</a></li>
+                        <li class="nav__item"><a href="construction.html" class="nav__link">Construction</a></li>
+                        <li class="nav__item"><a href="healthcare.html" class="nav__link">Healthcare</a></li>
+                        <li class="nav__item"><a href="transportation.html" class="nav__link">Transportation</a></li>
+                        <li class="nav__item"><a href="design.html" class="nav__link">Design</a></li>
+                        <li class="nav__item"><a href="computer.html" class="nav__link">Computer</a></li>
                     </ul>
                 </div>
 
@@ -41,13 +43,16 @@
                 <div class="home__data">
                     <h1 class="home__title"><span class="home__title-color">Communications</span><br>Technology</h1>
 
-                    <a href="#contact" class="button">Contact</a>
+                    <a href="#about" class="button">View More</a>
                 </div>
 
                 <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                    <a href="/communications.html" class="home__social-icon" title="Communications Technology"><i class='bx bx-megaphone'></i></a>
+                    <a href="/construction.html" class="home__social-icon" title="Construction Technology"><i class='bx bx-traffic-cone'></i></a>
+                    <a href="/healthcare.html" class="home__social-icon" title="Healthcare Technology"><i class='bx bx-hospital'></i></a>
+                    <a href="/transportation.html" class="home__social-icon" title="Transportation Technology"><i class='bx bx-car'></i></a>
+                    <a href="/design.html" class="home__social-icon" title="Technology Design"><i class='bx bx-angle'></i></a>
+                    <a href="/computer.html" class="home__social-icon" title="Computer Technology"><i class='bx bx-code'></i></a>
                 </div>
 
                 <div class="home__img">
@@ -57,30 +62,46 @@
                         </mask>
                         <g mask="url(#mask0)">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="static/img/work1.jpg"/>
+                            <image class="home__blob-img" x="-100" y="0" href="static/img/classroom.jpg"/>
                         </g>
                     </svg>
                 </div>
             </section>
 
             <!--===== ABOUT =====-->
-            <section class="about section " id="about">
+            <section class="about section" id="about">
                 <h2 class="section-title">About</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="static/img/about.jpg" alt="">
+                        <img src="static/img/work5.jpg" alt="">
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am Marlon</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
+                        <h2 class="about__subtitle">Communications Technology</h2>
+                        <p class="about__text">Placeholder text</p>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="projects">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="about__container bd-grid">
+                    <div>
+                        <h2 class="about__subtitle">Communications Technology</h2>
+                        <p class="about__text">Placeholder text</p>
+                    </div>
+
+                    <div class="about__img">
+                        <img src="static/img/work5.jpg" alt="">
+                    </div>
                 </div>
             </section>
 
             <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
+            <!-- <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
                 <div class="skills__container bd-grid">          
@@ -141,10 +162,10 @@
                         <img src="static/img/work3.jpg" alt="" class="skills__img">
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!--===== WORK =====-->
-            <section class="work section" id="work">
+            <!-- <section class="work section" id="work">
                 <h2 class="section-title">Work</h2>
 
                 <div class="work__container bd-grid">
@@ -167,7 +188,7 @@
                         <img src="static/img/work6.jpg" alt="">
                     </a>
                 </div>
-            </section>
+            </section> -->
 
             <!--===== CONTACT =====-->
             <!-- <section class="contact section" id="contact">
@@ -186,8 +207,8 @@
 
         <!--===== FOOTER =====-->
         <footer class="footer">
-            <p class="footer__title">Portfolio Numérique de Benny</p>
-            <p class="footer__copy">&#169; 2025. All rigths reserved.</p>
+            <p class="footer__title">Technology and the Skilled Trades Portfolio</p>
+            <p class="footer__copy">&#169; 2025 Exemplary Studios. All rights reserved.</p>
         </footer>
 
 
