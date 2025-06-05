@@ -104,6 +104,11 @@ img {
   margin-right: var(--mb-2);
 }
 
+.bd-center {
+  max-width: 600px;
+  margin: auto;
+}
+
 .l-header {
   width: 100%;
   position: fixed;
