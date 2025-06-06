@@ -194,6 +194,14 @@ img {
   right: 0;
 }
 
+/*===== Unit pages =====*/
+.communications-home {
+  background-image: url("/static/img/broadcasting.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*===== HOME =====*/
 .home {
   position: relative;
