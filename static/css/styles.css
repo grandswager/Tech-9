@@ -34,6 +34,17 @@
   }
 }
 
+.underline--dotted {
+  text-decoration: underline;
+  text-decoration-style: dotted !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .25em;
+}
+
+.underline--dotted:hover {
+  cursor: help;
+}
+
 /*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -326,16 +337,16 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 95%;
+  width: 100%;
 }
 .skills__css {
-  width: 85%;
+  width: 100%;
 }
 .skills__js {
-  width: 65%;
+  width: 100%;
 }
 .skills__ux {
-  width: 85%;
+  width: 100%;
 }
 .skills__img {
   border-radius: 0.5rem;
