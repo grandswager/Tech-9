@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exemplary website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
+</head>
+
+<body>
+    <header class="ui-header">
+        <div class="header-inner">
+            <div class="logo">Exemplary Store</div>
+
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="#d">Items</a>
+                <a href="#d">Checkout</a>
+                <a href="#d">Cart</a>
+            </nav>
+
+            <button class="btn primary header-btn">Sign In</button>
+
+            <div class="menu-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <div id="fake-link-alert" class="alert danger" style="display:none;">
+        links don't exist haha 😆
+    </div>
+
+    <div class="alert info"><span class="badge danger">Warning</span>This website will shutdown between November 4th, 1238746378 and November 5th, 1238746378 from 00:00 to 23:59 for scheduled maintenance.</div>
+
+    <div class="alert success">Your purchase has successfully gone through!</div>
+
+    <section>
+        <h2>Feedback Form</h2>
+        <p class="body-text">Your feedback is extremely valuable for us!</p>
+        <p class="caption"><span class="badge danger">Warning</span>We do not tolerate inappropriate or hateful language directed to us.</p><br>
+
+        <form class="form">
+            <div class="field">
+                <input type="text" id="name" required>
+                <label for="name">Name *</label>
+            </div>
+
+            <div class="field">
+                <input type="email" id="email" required>
+                <label for="email">Email *</label>
+            </div>
+
+            <div class="field">
+                <textarea id="textarea" required></textarea>
+                <label for="textarea">Message *</label>
+            </div>
+
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+                I would like to be contacted
+            </label>
+
+            <label class="checkbox">
+                <input type="checkbox" required>
+                <span class="checkmark"></span>
+                <span>I agree to the <a href="">Terms and Conditions</a>. *</span>
+            </label>
+
+            <button class="btn muted" type="submit">Submit</button>
+            <p class="caption">We are not accepting responses at this time.</p>
+        </form>
+    </section>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        document.querySelectorAll('a[href="#d"]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                const alertBox = document.getElementById("fake-link-alert");
+
+                alertBox.style.display = "block";
+
+                setTimeout(() => {
+                    alertBox.style.display = "none";
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>
